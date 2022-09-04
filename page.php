@@ -1,27 +1,15 @@
-
 <?php
-get_header();
-function postAreHere()
-{
-    ?>
-    <h1>This is a page</h1>
-    <?php
-    while (have_posts()) {
-        the_post(); 
 
-        ?>
-        
-       <h1> <?php echo strtoupper(get_the_title()) ;?></h1> 
-       <p><?php the_content();?></p> 
+  get_header();
 
-        <?php
-        
-        
-    }
-    ?>
-    <?php
-}
+  while(have_posts()) {
+    the_post(); ?>
+    <h1>This is a page not a post</h1>
+    <h2><?php the_title(); ?></h2>
+    <?php the_content(); ?>
+    
+  <?php }
 
-postAreHere();
-get_footer();
+  get_footer();
+
 ?>
