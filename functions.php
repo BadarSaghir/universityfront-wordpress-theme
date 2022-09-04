@@ -14,3 +14,11 @@ function university_files() {
 add_action('wp_enqueue_scripts', function() : void {
   university_files();
 } );
+
+/**
+ * Fires after the theme is loaded.
+ *
+ */
+add_action("after_setup_theme",function() : void {
+  add_theme_support('title-tag');
+} );
