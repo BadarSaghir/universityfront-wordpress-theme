@@ -1,5 +1,6 @@
 
 <?php
+get_header();
 function postAreHere()
 {
     ?>
@@ -22,4 +23,5 @@ function postAreHere()
 }
 
 postAreHere();
+get_footer();
 ?>

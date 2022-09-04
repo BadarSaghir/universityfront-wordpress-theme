@@ -17,6 +17,7 @@ function postAreHere()
     ?>
     <?php
 }
-
+get_header();
 postAreHere();
+get_footer();
 ?>
