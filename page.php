@@ -50,7 +50,8 @@ while (have_posts()) {
           ?>
           <li><a href="#"><?php wp_list_pages(array(
             "title_li"=>null,
-            "child_of"=>$parent_id
+            "child_of"=>$parent_id,
+            'sort_column' => 'menu_order'
           ))?></a></li>
         </ul>
       </div>

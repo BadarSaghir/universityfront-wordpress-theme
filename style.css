@@ -4,7 +4,11 @@ Author: Sardar Badar
 Version: 1
 */
 
-html {
+
+/* Document
+   ========================================================================== */
+
+   html {
     font-family: sans-serif; /* 1 */
     line-height: 1.15; /* 2 */
     -ms-text-size-adjust: 100%; /* 3 */
@@ -2353,3 +2357,4 @@ html {
     border-bottom: none;
     margin-bottom: 0;
   }
+  

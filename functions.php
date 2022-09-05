@@ -21,4 +21,11 @@ add_action('wp_enqueue_scripts', function() : void {
  */
 add_action("after_setup_theme",function() : void {
   add_theme_support('title-tag');
+  register_nav_menu('headerMenuLocation',"Header Menu Location");
+  register_nav_menu('footerMenuOne',"Footer Menu One");
+  register_nav_menu('footerMenuTwo',"Footer Menu Two");
+ 
+
+
 } );
+
