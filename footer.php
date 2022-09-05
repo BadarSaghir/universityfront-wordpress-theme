@@ -8,6 +8,7 @@
           <h1 class="school-logo-text school-logo-text--alt-color"><a href="<?php echo site_url()?>"><strong>Fictional</strong> University</a></h1>
           <p><a class="site-footer__link" href="#">555.555.5555</a></p>
         </div>
+        
 
         <div class="site-footer__col-two-three-group">
           <div class="site-footer__col-two">

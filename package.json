@@ -1,0 +1,17 @@
+{
+  "name": "universityfront",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/BadarSaghir/universityfront-wordpress-theme.git",
+  "author": "SardarBadar <dataentrybadar@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "ts-node": "^10.9.1"
+  },
+  "dependencies": {
+    "@types/browser-sync": "^2.26.3",
+    "@types/gulp": "^4.0.9",
+    "browser-sync": "^2.27.10"
+  }
+}
