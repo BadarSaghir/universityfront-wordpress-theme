@@ -1,8 +1,13 @@
-/* 3rd party packages */
-@import "normalize.css";
-@import "../node_modules/@glidejs/glide/dist/css/glide.core.min.css";
+/*
+Theme Name: University Front
+Author: Sardar Badar
+Version: 2
+*/
 
-/* SASS and Global'ish Stuff */
+@import "normalize.css";
+@import "./glide.core.min.css";
+
+/* SASS and Global Stuff */
 @import "base/variables";
 @import "base/baseline";
 @import "base/utility-classes";

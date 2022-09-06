@@ -6,7 +6,13 @@
   "author": "SardarBadar <dataentrybadar@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@types/del": "^4.0.0",
+    "@types/gulp-sass": "^5.0.0",
+    "@types/sass": "^1.43.1",
+    "del": "^7.0.0",
     "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.54.8",
     "ts-node": "^10.9.1"
   },
   "dependencies": {
