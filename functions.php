@@ -15,6 +15,18 @@ add_action('wp_enqueue_scripts', function() : void {
   university_files();
 } );
 
+// must be implented in mu-plugins folder
+// add_action('init',function() : void {
+//   register_post_type('event',array(
+//       'public'=>true,
+//       'labels'=>array(
+//           'name'=>'Events',
+//           'add_new_item'=>"Add New Event",
+//           'edit_item'=>"Edit New item"
+//       ),
+//       'menu_icon'=>'dashicons-calender'
+//   ));
+// } );
 /**
  * Fires after the theme is loaded.
  *

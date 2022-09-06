@@ -4,21 +4,32 @@
   "main": "index.js",
   "repository": "https://github.com/BadarSaghir/universityfront-wordpress-theme.git",
   "author": "SardarBadar <dataentrybadar@gmail.com>",
+  "scripts": {
+    "build": "webpack"
+  },
   "license": "MIT",
   "devDependencies": {
+    "@glidejs/glide": "^3.5.2",
+    "@types/browser-sync": "^2.26.3",
     "@types/del": "^4.0.0",
+    "@types/gulp": "^4.0.9",
     "@types/gulp-sass": "^5.0.0",
+    "@types/jquery": "^3.5.14",
     "@types/sass": "^1.43.1",
+    "browser-sync": "^2.27.10",
     "del": "^7.0.0",
     "gulp": "^4.0.2",
     "gulp-sass": "^5.1.0",
     "sass": "^1.54.8",
-    "ts-node": "^10.9.1"
+    "ts-loader": "^9.3.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.2",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
   },
   "dependencies": {
-    "@glidejs/glide": "^3.5.2",
-    "@types/browser-sync": "^2.26.3",
-    "@types/gulp": "^4.0.9",
-    "browser-sync": "^2.27.10"
+    "google-maps": "^4.3.3",
+    "jquery": "^3.6.1",
+    "slick-carousel": "^1.8.1"
   }
 }

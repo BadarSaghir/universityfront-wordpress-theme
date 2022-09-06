@@ -1,4 +1,4 @@
-import {watch,parallel, task,src, dest, series} from "gulp";
+import {watch,parallel, task,src, dest} from "gulp";
 import  {create} from "browser-sync"
 import { TaskCallback } from "undertaker";
 // import del from 'del'
@@ -13,7 +13,8 @@ function sync(cb: TaskCallback) {
  browser_sync.init({
     proxy:"smile-now.local",   
     });
-    watch("**/*\.(php|ts|js|css|html)").on('change',()=>{browser_sync.reload()})
+    watch("**/**\.(php|ts|js|css|html)").on('change',()=>{browser_sync.reload()})
+    // watch("../../mu-plugins/**\.(php|ts|js|css|html)").on('change',()=>{browser_sync.reload()})
     cb()
     
 }
