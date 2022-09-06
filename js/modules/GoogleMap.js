@@ -1,19 +1,12 @@
 import $ from 'jquery';
-import {Loader, LoaderOptions} from 'google-maps';
-let google_set
-const options: LoaderOptions = {};
-const loader = new Loader('my-api-key', options);
-let google= await loader.load();
-  
 
 class GMap {
-  constructor () {
-    
+  constructor() {
     var self = this;
     $('.acf-map').each(function(){
       self.new_map( $(this) );
     });
-    
+
   } // end constructor
 
   new_map( $el ) {
@@ -32,7 +25,7 @@ class GMap {
     var map = new google.maps.Map( $el[0], args);
 
     // add a markers reference
-    // map.markers = [];
+    map.markers = [];
 
     var that = this;
 

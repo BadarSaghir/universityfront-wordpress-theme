@@ -1,6 +1,7 @@
 import {watch,parallel, task,src, dest} from "gulp";
 import  {create} from "browser-sync"
 import { TaskCallback } from "undertaker";
+import webpack from 'webpack'
 // import del from 'del'
 import dartSass from 'sass';
 import gulpSass from 'gulp-sass';
@@ -30,8 +31,19 @@ const styles=() => {
 //     ]);
 // });
 
-task('watch',parallel([(cb)=>{sync(cb)},(cb)=>{styles();watch("**/*\.(scss)").on('change',(cb)=>{styles()})}]))
+task('watch',parallel([(cb)=>{sync(cb)},(cb)=>{styles();watch("**/*\.(scss)").on('change',(cb)=>{styles()})},(cb)=>{watch(["js/modules/**.js","js/scripts.js"],(c)=>{scripts(c)})}]))
 
+
+function scripts(c: TaskCallback) {
+    webpack(require('./webpack.config.js'), function(err, stats) {
+        if (err) {
+          console.log(err.toString());
+        }
+    
+        console.log(stats.toString());
+        c();
+      });;
+}
 // export const build = parallel((cb)=>{sync(cb)})
 
 

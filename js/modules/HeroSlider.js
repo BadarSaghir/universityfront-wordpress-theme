@@ -1,11 +1,8 @@
 import $ from 'jquery';
 
 class HeroSlider {
-  els:any
-  
   constructor() {
-    
-     this.els = $(".hero-slider");
+    this.els = $(".hero-slider");
     this.initSlider();
   }
 
