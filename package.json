@@ -16,6 +16,7 @@
     "ts-node": "^10.9.1"
   },
   "dependencies": {
+    "@glidejs/glide": "^3.5.2",
     "@types/browser-sync": "^2.26.3",
     "@types/gulp": "^4.0.9",
     "browser-sync": "^2.27.10"
