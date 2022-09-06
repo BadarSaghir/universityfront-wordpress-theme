@@ -14,8 +14,12 @@ get_header(); ?>
 
 <div class="container container--narrow page-section">
 <?php
-  while(have_posts()) {
-    the_post(); ?>
+  $homepageEvent=new WP_Query(array(
+    "post_per_page"=>10,
+    
+  ));
+  while($homepageEvent->have_posts()) {
+    $homepageEvent->the_post(); ?>
     <div class="post-item">
       <h2 class="headline headline--medium headline--post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
       
