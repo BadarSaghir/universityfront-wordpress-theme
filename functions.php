@@ -43,7 +43,7 @@ add_action('wp_enqueue_scripts', function() : void {
       
 //       'singular_name'=>'Program'
 //   ),
-//   'menu_icon'=>'awards'
+//   'menu_icon'=>'dashicons-awards'
 // ));
 /**
  * Fires after the theme is loaded.
