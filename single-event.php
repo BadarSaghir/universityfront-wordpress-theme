@@ -20,8 +20,21 @@
         <p><a class="metabox__blog-home-link" href="<?php echo get_post_type_archive_link('event') ?>"><i class="fa fa-home" aria-hidden="true"></i> Events Home </a><span> <?php the_title()?>  </span> </p>
       </div>
 
-      <div class="generic-content"><?php the_content(); ?></div>
-
+      <div class="generic-content"><?php the_content(); ?>
+      </div>
+      <?php $related_program=get_field('related_program');
+          //  print_r($related_program) 
+          if($related_program){
+          echo "<hr class=\"section-break\"/>";
+          echo "<h2 class=\"headline headline--medium\">Related Programs</h2>";
+          echo '<ul class="link-list min-list">';
+           foreach($related_program as $program){ ?>
+          <li><a href="<?php echo get_the_permalink($program);?>"><?php echo get_the_title($program);?></a></li>
+          
+           <?php }
+           echo "</ul>";
+           }?>
+      
     </div>
   <?php }
 

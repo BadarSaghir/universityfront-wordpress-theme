@@ -17,6 +17,8 @@ add_action('wp_enqueue_scripts', function() : void {
 
 // must be implented in mu-plugins folder
 // register_post_type('event',array(
+//         'support'=>array('title','editor','excerpt'),
+
 //   'rewrite'=>array('slug'=>'events'),
 //   'has_archive'=>true,
 //   'public'=>true,
@@ -32,6 +34,7 @@ add_action('wp_enqueue_scripts', function() : void {
 // ));
 // //Program
 // register_post_type('Program',array(
+//  'support'=>array('title','editor','excerpt'),
 //   'rewrite'=>array('slug'=>'Programs'),
 //   'has_archive'=>true,
 //   'public'=>true,
@@ -54,6 +57,7 @@ add_action("after_setup_theme",function() : void {
   register_nav_menu('headerMenuLocation',"Header Menu Location");
   register_nav_menu('footerMenuOne',"Footer Menu One");
   register_nav_menu('footerMenuTwo',"Footer Menu Two"); 
+ 
 } );
 
 
