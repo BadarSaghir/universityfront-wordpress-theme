@@ -20,11 +20,39 @@
       </div>
 
       <div class="generic-content"><?php the_content(); ?></div>
+      <?php 
+        $today = date('Ymd');
+        $related_professor = new WP_Query(array(
+          'posts_per_page' => -1,
+          'post_type' => 'professor',
+          'orderby' => 'title',
+          'order' => 'ASC',
+          'meta_query' => array( 
+            array(
+              'key' => 'related_program',
+              'compare' => 'LIKE',
+              'value' => '"' . get_the_ID() . '"'
+            )
+          )
+        ));
+
+        if ( $related_professor->have_posts()) {
+          echo '<hr class="section-break">';
+        echo '<h2 class="headline headline--medium">Professor of ' . get_the_title() . ' </h2>';
+
+        while( $related_professor->have_posts()) {
+          $related_professor->the_post(); ?>
+         <li><a href="<?php the_permalink() ?>"><?php the_title() ?></a></li>
+       
+        <?php }
+        }
+
+      ?>
 
       <?php 
         $today = date('Ymd');
         $homepageEvents = new WP_Query(array(
-          'posts_per_page' => 2,
+          'posts_per_page' => -1,
           'post_type' => 'event',
           'meta_key' => 'event_date',
           'orderby' => 'meta_value_num',
