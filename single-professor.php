@@ -11,7 +11,7 @@
   -->
       <div class="page-banner__bg-image" style="background-image: url(<?php 
       $banner_image=get_field('page_banner_background');
-      echo $banner_image['url'];
+      echo $banner_image['sizes']['pageBanner'];
       ?>);"></div>
       <div class="page-banner__content container container--narrow">
         <h1 class="page-banner__title"><?php the_title(); ?></h1>
