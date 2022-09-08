@@ -37,7 +37,7 @@
               'type' => 'numeric'
             ),
             array(
-              'key' => 'related_programs',
+              'key' => 'related_program',
               'compare' => 'LIKE',
               'value' => '"' . get_the_ID() . '"'
             )
