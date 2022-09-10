@@ -1,25 +1,11 @@
 <?php
   
   get_header();
-
+pageBanner();
   while(have_posts()) {
-    the_post(); ?>
-    <div class="page-banner">
-    <!-- page_banner_background
-  
-  pageBanner
-  -->
-      <div class="page-banner__bg-image" style="background-image: url(<?php 
-      $banner_image=get_field('page_banner_background');
-      echo $banner_image['sizes']['pageBanner'];
-      ?>);"></div>
-      <div class="page-banner__content container container--narrow">
-        <h1 class="page-banner__title"><?php the_title(); ?></h1>
-        <div class="page-banner__intro">
-          <p><?php the_field('page_banner_subtitle')?></p>
-        </div>
-      </div>  
-    </div>
+    the_post();
+  ?>
+   
 
     <div class="container container--narrow page-section">
           <div class="metabox metabox--position-up metabox--with-home-link">
