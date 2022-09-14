@@ -4,6 +4,7 @@ require get_theme_file_path("/inc/custom-posts.php");
 require get_theme_file_path("/inc/register-new-fields.php");
 require get_theme_file_path("/inc/university-misc.php");
 
+require get_theme_file_path("/inc/redirection.php");
 function pageBanner()
 {?>
   <div class="page-banner">
