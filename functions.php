@@ -3,8 +3,10 @@ require get_theme_file_path("/inc/search-route.php");
 require get_theme_file_path("/inc/custom-posts.php");
 require get_theme_file_path("/inc/register-new-fields.php");
 require get_theme_file_path("/inc/university-misc.php");
-
 require get_theme_file_path("/inc/redirection.php");
+require get_theme_file_path("/inc/notes-func.php");
+
+
 function pageBanner()
 {?>
   <div class="page-banner">
